@@ -1,0 +1,14 @@
+abstract class Charger {
+    abstract void charge();
+}
+
+class SamsungCharger extends Charger {
+    void charge() {
+        System.out.println("Charging phone");
+    }
+
+    public static void main(String[] args) {
+        Charger c = new SamsungCharger();
+        c.charge();
+    }
+}
