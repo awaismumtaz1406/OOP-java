@@ -1,0 +1,16 @@
+class Notification {
+    void send() {
+        System.out.println("Sending notification");
+    }
+}
+
+class EmailNotification extends Notification {
+    void send() {
+        System.out.println("Sending email");
+    }
+
+    public static void main(String[] args) {
+        Notification n = new EmailNotification();
+        n.send();
+    }
+}
