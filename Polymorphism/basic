@@ -1,0 +1,16 @@
+class Shape {
+    void area() {
+        System.out.println("Area");
+    }
+}
+
+class Circle extends Shape {
+    void area() {
+        System.out.println("Circle Area");
+    }
+
+    public static void main(String[] args) {
+        Shape s = new Circle();
+        s.area();
+    }
+}
