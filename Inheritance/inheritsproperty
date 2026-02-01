@@ -1,0 +1,17 @@
+class Person {
+    void walk() {
+        System.out.println("Walking");
+    }
+}
+
+class Teacher extends Person {
+    void teach() {
+        System.out.println("Teaching");
+    }
+
+    public static void main(String[] args) {
+        Teacher t = new Teacher();
+        t.walk();
+        t.teach();
+    }
+}
