@@ -1,0 +1,14 @@
+abstract class ATM {
+    abstract void withdraw();
+}
+
+class SBIATM extends ATM {
+    void withdraw() {
+        System.out.println("Cash withdrawn");
+    }
+
+    public static void main(String[] args) {
+        ATM atm = new SBIATM();
+        atm.withdraw();
+    }
+}
