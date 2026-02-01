@@ -1,0 +1,16 @@
+class Payment {
+    void pay() {
+        System.out.println("Payment");
+    }
+}
+
+class UPI extends Payment {
+    void pay() {
+        System.out.println("UPI Payment");
+    }
+
+    public static void main(String[] args) {
+        Payment p = new UPI();
+        p.pay();
+    }
+}
