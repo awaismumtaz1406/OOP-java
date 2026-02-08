@@ -1,4 +1,4 @@
-
+ //whole class made fiend of x
 #include <iostream>
 using namespace std;
 
@@ -24,7 +24,7 @@ int main(){
 
 
 
-//
+// whole class friend with  2 arguments 
 
 #include <iostream>
 using namespace std;
@@ -54,7 +54,49 @@ int main(){
     b.show(ob);
 }
 
-//
+//only one fx made friend not whole class
+
+#include <iostream>
+using namespace std;
+
+class x
+{
+    private:
+    int l=5;
+
+friend void show(x);
+
+};
+
+void show (x a){
+cout<<a.l;
+}
+
+int main(){
+    x ob;
+    show(ob);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
