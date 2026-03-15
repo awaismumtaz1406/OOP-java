@@ -1,1 +1,24 @@
 
+// using virtual keywprd we find solution if diamond problem
+#include <iostream>
+using namespace std;
+
+class x {public:  int a;};
+
+class y:virtual public x { public:  int b;};
+
+class z:virtual public x {
+    public: int c;};
+
+class  X: public y, public z {
+    public:  int d;};
+
+int main(){
+   X obj;
+  obj.a=10;
+  obj.b=10;
+  obj.d=10;
+return 0;}
+
+
+
