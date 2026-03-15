@@ -1,1 +1,21 @@
+class A {
+   public:
+  virtual void show(){
+        cout<<"its a CLASS aAAA";
+   } };
+  class b : public A{
+     public:
+      void show(){
+        cout<<"its a CLASS bBBB";
+    }   
+        
+    };
 
+
+int main() {
+A *ptr;
+b b1;
+ptr=&b1;
+ptr->show(); // here overide didnt work so bcz pouinter always base class so virtual ensures aus ato display what u want to desplay
+    return 0;
+}
